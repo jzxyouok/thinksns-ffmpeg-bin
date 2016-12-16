@@ -1,0 +1,20 @@
+{
+    "name": "medz/thinksns-ffmpeg-bin",
+    "type": "custom-folders",
+    "homepage": "http://medz.cn",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Seven Du",
+            "email": "lovevipdsw@outlook.com",
+            "homepage": "http://medz.cn",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "medz/composer-vendor-install-folders": "^1.0"
+    },
+    "extra": {
+        "custom-path": "bin/ffmpeg"
+    }
+}
