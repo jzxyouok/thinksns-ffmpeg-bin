@@ -42,8 +42,17 @@ ThinkSNS程序中视频转码的ffmpeg运行文件拓展包。
   ```shell
   composer require medz/thinksns-ffmpeg-bin
   ```
+5. 设置ffmpeg运行权限
 
-5. 进入后台
+  5.1 进入`/web/thinksns/bin`目录下
+  
+  5.2 执行(www:www是用户组合用户，这里默认为www，你应该修改为你的程序运行用户组)
+    ```shell
+    chown -R www:www ./ffmpeg
+    chmod -R +x ./ffmpeg
+    ```
+    
+6. 进入后台
   ![视频转码配置](/ffmpeg-config-1.png)
   在 * ffmpeg安装路径 * 栏输入`/web/thinksns/bin/ffmpeg/ffmpeg`点击下面的保存，即完成。
 
